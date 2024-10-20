@@ -19,7 +19,6 @@ services:
   app:
     build:
       context: ./yojak-erp-frontend
-      target: build
       dockerfile: Dockerfile
     working_dir: /app
     
