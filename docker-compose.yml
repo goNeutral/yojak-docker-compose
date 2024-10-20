@@ -21,11 +21,9 @@ services:
       context: ./yojak-erp-frontend
       target: build
       dockerfile: Dockerfile
-    workdir: /app
+    working_dir: /app
     
     ports:
       - "6969:6969"
     expose:
       - 6969
-   
-    
