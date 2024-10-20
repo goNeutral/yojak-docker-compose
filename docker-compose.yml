@@ -21,7 +21,7 @@ services:
       context: ./yojak-erp-frontend
       target: build
       dockerfile: Dockerfile
-    workdir /app
+    workdir: /app
     
     ports:
       - "6969:6969"
