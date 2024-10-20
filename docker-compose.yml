@@ -2,14 +2,14 @@ version: "3"
 services:
   backend:
     build:
-      context: ./Yojak-erp-backend
+      context: ./yojak-erp-backend
       dockerfile: Dockerfile
     working_dir: /yojak
     
     env_file:
-      - ./Yojak-erp-backend/.env
+      - ./yojak-erp-backend/.env
     volumes:
-        - ./Yojak-erp-backend:/yojak
+        - ./yojak-erp-backend:/yojak
     expose:
       - 8023
     ports:
@@ -29,6 +29,4 @@ services:
     volumes:
       - .yojak-erp-frontend:/app
       - /app/node_modules
-    environment:
-      NODE_ENV: development
-    command: ["yarn", "start"]
+    
